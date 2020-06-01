@@ -78,7 +78,7 @@ function copyMarkdown() {
             const folder = path.dirname(source);
             const dest = path.join(
                 root,
-                `fast-${folder.substr(folder.lastIndexOf("/") + 1)}.md`
+                `fast-${folder.substr(folder.lastIndexOf("/") + 1)}.mdx`
             );
 
             fs.copyFile(source, dest, error => {

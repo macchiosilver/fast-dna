@@ -6,6 +6,14 @@ module.exports = {
     favicon: "img/favicon/favicon.ico",
     organizationName: "microsoft",
     projectName: "fast-dna",
+    scripts: [
+        {
+            type: "module",
+            src: "https://static.fast.design/assets/scripts/packages/fast-components.js",
+            async: true,
+        },
+    ],
+    themes: ["@docusaurus/theme-live-codeblock"],
     themeConfig: {
         navbar: {
             logo: {
